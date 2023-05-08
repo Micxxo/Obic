@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/hari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sunday, 8"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:background="@color/primary"/>
+
+    <TextView
+        android:id="@+id/greetHalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hallo,"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratmedium"
+        android:textSize="12dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/hari"
+        android:background="@color/primary"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratmedium"
+        android:textSize="12dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="3dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/hari"
+        android:layout_toRightOf="@+id/greetHalo"
+        android:background="@color/primary"/>
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/04/23"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratbold"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/lineWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="89dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+       />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="89dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_toRightOf="@+id/line1"
+            android:layout_marginLeft="20dp"
+
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineWrapper"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/jadwal_item" />
+
+    </ScrollView>
+
+</RelativeLayout>

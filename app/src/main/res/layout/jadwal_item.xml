@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        app:cardElevation="10dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/jdlJadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rapat Sosis"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserratmedium"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/waktuJdwl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:30"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_toEndOf="@id/jdlJadwal"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_below="@+id/jdlJadwal"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:id="@+id/statusLogo"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/menunggu"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/statusLogo"
+                android:layout_below="@+id/line"
+                android:text="Menunggu..."
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratmedium"
+                android:textSize="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

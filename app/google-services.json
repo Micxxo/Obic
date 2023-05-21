@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "421765602534",
+    "project_id": "obic-b46a8",
+    "storage_bucket": "obic-b46a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421765602534:android:432b0255a990e43aff2f27",
+        "android_client_info": {
+          "package_name": "com.mico.obic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421765602534-pn5daq6vhthdqsobpr9521c6mm9kp8ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVDIb3I1jzGv-SkKjX0-wkvrDNVtZqVss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421765602534-pn5daq6vhthdqsobpr9521c6mm9kp8ul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

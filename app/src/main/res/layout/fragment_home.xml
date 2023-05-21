@@ -9,7 +9,7 @@
         android:id="@+id/hari"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sunday, 8"
+        android:text="sunday"
         android:textColor="@color/black"
         android:fontFamily="@font/montserratbold"
         android:textSize="30dp"
@@ -82,7 +82,26 @@
             android:layout_marginLeft="20dp"
 
             />
+
+<!--        <Button-->
+<!--            android:id="@+id/tes"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="tes"-->
+<!--            android:layout_centerHorizontal="true"/>-->
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Belum ada data"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
     </RelativeLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -94,7 +113,8 @@
             android:id="@+id/recylerView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/jadwal_item" />
+            tools:listitem="@layout/jadwal_item"
+            />
 
     </ScrollView>
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verify">
+
+    <TextView
+        android:id="@+id/jdlPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Verifikasi"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:fontFamily="@font/montserratbold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/jadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jdlPage"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="256dp"
+        android:text="Verifikasi setelah anda menyelesaikan jadwal!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVerifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Verifikasi"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#46D970"
+        />
+
+</RelativeLayout>

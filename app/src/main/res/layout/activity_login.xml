@@ -21,6 +21,7 @@
 
     <TextView
         android:id="@+id/textView"
+        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratbold"
@@ -48,6 +49,7 @@
 
     <EditText
         android:id="@+id/password"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"

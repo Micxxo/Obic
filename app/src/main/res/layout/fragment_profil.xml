@@ -56,7 +56,7 @@
             android:id="@+id/nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="John Nurul Haq"
+            android:text="Loading"
             android:layout_below="@+id/cardFoto"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
@@ -72,18 +72,20 @@
             android:layout_height="40dp"
             android:src="@drawable/ic_baseline_stars_24"
             android:layout_below="@+id/nama"
-            android:layout_marginLeft="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="200pts"
+            android:text="Loading"
             android:textColor="@color/black"
             android:textSize="14dp"
-            android:layout_marginLeft="35dp"
+            android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="28dp"
             android:fontFamily="@font/montserratbold"
             android:layout_below="@+id/stars"/>
 
@@ -91,18 +93,17 @@
           android:id="@+id/lvlDisiplin"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="5"
+          android:text="0"
           android:textSize="32dp"
           android:textColor="#819BFC"
           android:fontFamily="@font/montserratbold"
-          android:layout_toRightOf="@+id/stars"
-          android:layout_below="@+id/nama"
-          android:layout_marginLeft="120dp"
+          android:layout_below="@id/nama"
+          android:layout_centerHorizontal="true"
           android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/txtLevel"
-            android:layout_width="96dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Level Kedisiplinan"
             android:textSize="12dp"
@@ -110,8 +111,7 @@
             android:textAlignment="center"
             android:fontFamily="@font/montserratbold"
             android:layout_below="@+id/lvlDisiplin"
-            android:layout_toRightOf="@+id/point"
-            android:layout_marginLeft="77dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"/>
         
         <ImageView
@@ -120,24 +120,23 @@
             android:layout_height="30dp"
             android:src="@drawable/ic_baseline_checklist_24"
             android:layout_below="@+id/nama"
-            android:layout_toRightOf="@+id/lvlDisiplin"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="70dp"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
             />
 
         <TextView
             android:id="@+id/jadwalDone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="100 Jadwal"
+            android:text="Loading"
             android:textSize="12dp"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:fontFamily="@font/montserratbold"
             android:layout_below="@+id/jadwalDoneLogo"
-            android:layout_toRightOf="@+id/lvlDisiplin"
-            android:layout_marginLeft="100dp" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="28dp"/>
 
     </RelativeLayout>
 
@@ -158,24 +157,6 @@
             android:textSize="24dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"/>
-
-        <TextView
-            android:id="@+id/editAcc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Edit Account"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="16dp"
-            android:fontFamily="@font/montserratmedium"/>
-        
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:backgroundTint="#8C8787"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="2dp"/>
 
         <TextView
             android:id="@+id/logout"

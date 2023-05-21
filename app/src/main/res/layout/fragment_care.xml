@@ -5,11 +5,99 @@
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Obicare Page"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obicares"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:padding="30dp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="294dp"
+                android:layout_height="243dp"
+                android:src="@drawable/obicares"
+                android:layout_below="@+id/judul"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/bicarakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicarakan Keluh Kesah Mu!"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/img"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp"/>
+
+            <EditText
+                android:id="@+id/masalahMu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masalah Mu"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/bicarakan"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/deskripsiTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/masalahMu"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp"/>
+
+            <EditText
+                android:id="@+id/deskripsiMasalah"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_below="@id/deskripsiTxt"
+                android:background="@drawable/textfield"/>
+            
+            <Button
+                android:id="@+id/btnPosting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerHorizontal="true"
+                android:text="Posting"
+                android:fontFamily="@font/montserratmedium"
+                android:backgroundTint="#46D970"
+                android:layout_below="@id/deskripsiMasalah"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
 
 </RelativeLayout>
